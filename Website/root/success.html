@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhiloSELF.com</title>
+    <link rel="stylesheet" href="../CSS/design.css">
+
+    <script src="../JS/validate.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="innerHeader"></div>
+          <div class="logo"><h1>Philo<span>SELF</span></h1></div>    
+          <div class="openMenu"><i class="fa fa-bars"></i></div>
+          <ul class="mainMenu">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="aboutUs.html">ABOUT US</a></li>
+              <li><a href="contactUS.html">CONTACT US</a></li>
+              <div class="closeMenu"><i class="fa fa-times"></i></div>
+          </ul>
+      </nav>
+    </nav> 
+
+    <div class="yay">
+        <!-- Success message for the purchase -->
+        <p>Thank you for your purchase. <br> You have successfully entered your credit card details!</p>
+        <!-- Display the last 4 digits of the credit card number -->
+        <p>Your credit card number ends in <span class="card-number"></span>.</p>
+      </div>
+      
+      <!-- Retrieve the card number from local storage and display it -->
+      <script>
+        // Retrieve the card number from local storage
+        const cardNumber = localStorage.getItem('cardNumber');
+        // Mask the card number by displaying only the last 4 digits
+        const maskedCardNumber = '**** **** **** ' + cardNumber.slice(-4);
+        // Update the text content of the element with class "card-number"
+        document.querySelector('.card-number').textContent = maskedCardNumber;
+        // Remove the card number from local storage to maintain security
+        localStorage.removeItem('cardNumber');
+      </script>
+      
+    <script>
+
+        const mainMenu = document.querySelector('.mainMenu')
+        const closeMenu = document.querySelector('.closeMenu')
+        const openMenu = document.querySelector('.openMenu')
+        
+        openMenu.addEventListener('click',show)
+        closeMenu.addEventListener('click',close)
+        
+        function show(){
+            mainMenu.style.display = 'flex';
+            mainMenu.style.top = '0';
+        }
+        
+        function close(){
+            mainMenu.style.top = '-100%';
+        }
+        
+          </script>
+
+
+
+
+</body>
+</html>

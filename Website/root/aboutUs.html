@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhiloSELF.com</title>
+    <link rel="stylesheet" href="../CSS/design.css">
+    <script src="../JS/myscripts.js"></script>
+    <script src="../JS/validate.js"></script>
+</head>
+<body> 
+
+  <nav>
+    <div class="innerHeader"></div>
+      <div class="logo"><h1>Philo<span>SELF</span></h1></div>    
+      <div class="openMenu"><i class="fa fa-bars"></i></div>
+      <ul class="mainMenu">
+          <li><a href="index.html" title="Home page for PhiloSELF">HOME</a></li>
+          <li><a href="aboutUs.html">ABOUT US</a></li>
+          <li><a href="contactUS.html">CONTACT US</a></li>
+          <div class="closeMenu"><i class="fa fa-times"></i></div>
+      </ul>
+  </nav>
+</nav> 
+
+<br>
+
+<p class="box">
+    Welcome to philoSELF! As a lover of philosophy, <br> I have always been fascinated by the exploration of the self and human nature. From pondering the meaning of existence to questioning the nature of reality, I have always found philosophy to be a way to connect with the deeper aspects of myself and the world around me.
+    <br>
+    This passion for self-discovery and understanding led me to create philoSELF, a virtual book store filled with a wide range of philosophy books, including titles such as The Tao of Pooh, 12 Rules for Life, The Power of Now, Meditations, Beyond Good and Evil, The Art of Living, The Courage to Be, and many more.
+    <br>
+    Whether you are a seasoned philosopher or a curious beginner, philoSELF has something to offer everyone who seeks to explore the fascinating world of philosophy and the self.
+</p>
+
+<script>
+
+    const mainMenu = document.querySelector('.mainMenu')
+    const closeMenu = document.querySelector('.closeMenu')
+    const openMenu = document.querySelector('.openMenu')
+    
+    openMenu.addEventListener('click',show)
+    closeMenu.addEventListener('click',close)
+    
+    function show(){
+        mainMenu.style.display = 'flex';
+        mainMenu.style.top = '0';
+    }
+    
+    function close(){
+        mainMenu.style.top = '-100%';
+    }
+    
+      </script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhiloSELF.com</title>
+    <link rel="stylesheet" href="../CSS/design.css">
+
+    <script src="../JS/myscripts.js"></script>
+    <script src="../JS/validate.js"></script>
+</head>
+<body>
+
+  <nav>
+    <div class="innerHeader"></div>
+      <div class="logo"><h1>Philo<span>SELF</span></h1></div>    
+      <ul class="mainMenu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="aboutUs.html">ABOUT US</a></li>
+          <li><a href="contactUS.html">CONTACT US</a></li>    
+          <div class="closeMenu"><i class="fa fa-times"></i></div>  
+      </ul>
+  </nav>
+</nav> 
+
+<!-- Create a form with an onsubmit event that triggers the validateForm() function -->
+<form onsubmit="return validateForm();">
+  <h3>Mastercard Form</h3>
+  <br>
+  <!-- Label and input field for the Mastercard number -->
+  <label for="master_card">Card Number:</label>
+  <input type="text" id="master_card" name="master_card" placeholder="Enter Mastercard Number">
+  
+  <!-- Label and input field for the expiration month -->
+  <label for="exp_month">Expiration Month:</label>
+  <input type="number" id="exp_month" name="exp_month" placeholder="MM" min="1" max="12">
+  
+  <!-- Label and input field for the expiration year -->
+  <label for="exp_year">Expiration Year:</label>
+  <input type="number" id="exp_year" name="exp_year" placeholder="YYYY" min="2023" max="2030">
+  
+  <!-- Label and input field for the security code -->
+  <label for="cvv_code">Security Code:</label>
+  <input type="text" id="cvv_code" name="cvv_code" placeholder="Enter Security Code">
+  <!-- Display a small description of where the security code can be found -->
+  <small>(3-4 digit code normally on the back of your card)</small>
+  
+  <!-- Display a button to submit the form -->
+  <button class="contBtn" type="submit">Continue</button>
+</form>
+</body>
+</html>
