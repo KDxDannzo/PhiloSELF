@@ -20,7 +20,7 @@ Make a Purchase: Click 'pay' to roceed to the secure checkout process. Enter pay
 
 Development Details Technologies Used: HTML, CSS, JavaScript
 Responsive Design: Achieved using JavaScript to enhance usability across different devices and screen sizes.
-Secure Transactions: Implemented secure transaction protocols to protect user information during purchases. Project Structure Source Code: [Link to GitHub Repository]
+Secure Transactions: Implemented secure transaction protocols to protect user information during purchases. Project Structure Source Code: https://github.com/KDxDannzo/PhiloSELF
 Assets: Includes images / book covers.
 Documentation: READMEFILE (this document) providing an overview of the project.
 
